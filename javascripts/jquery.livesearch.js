@@ -26,6 +26,7 @@ jQuery.fn.liveUpdate = function(list){
       rows.show();
       if ( window.viewedAll !== true ) {
         $('#posts article:gt(4)').hide();
+        $('.show-all-posts').hide();
       };
       $('.nothin').hide();
     } else {
