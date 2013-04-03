@@ -204,10 +204,10 @@ A few things are happening here:
 So let's create that `Ember` controller. This will act as the primary application serving controller that is hit when people visit the app.
 
 {% highlight ruby %}
-class EmberController < ActionController::Base; end
+class EmberController < ApplicationController::Base; end
 {% endhighlight %}
 
-Note that we are inheriting from `ApplicationController::Base` this time and not `ApplicationController`. This was the controller actions can respondt to non `JSON` requests.
+Note that we are inheriting from `ApplicationController::Base` this time and not `ApplicationController`. This was the controller actions can respond to non `JSON` requests.
 
 Now we will add the view in `app/views/ember/index.html.erb`
 
